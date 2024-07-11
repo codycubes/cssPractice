@@ -1,0 +1,37 @@
+.Card {
+    width: 282px;
+    height: 376px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardIMG {
+    width: 282px;
+    height: 188px;
+}
+
+.paragraph {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* width: 250px; */
+}
+
+.line {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 5px solid #000000;
+    width: 64px;
+    height: 4px;
+  }
+
+  .cardContainer {
+    display: flex;
+    justify-content: space-between;
+
+  }

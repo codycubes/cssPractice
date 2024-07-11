@@ -1,0 +1,33 @@
+.About {
+    display: flex;
+    flex-direction: row;
+    top: 150px;
+    position: relative;
+
+}
+
+.imageContainer  {
+    width: 50%;
+    position: relative;
+}
+
+.textSection {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 84px;
+    /* top: 100px;
+    height: 60%; */
+    padding: 80px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+
+
+

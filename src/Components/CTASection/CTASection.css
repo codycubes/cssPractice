@@ -1,0 +1,28 @@
+.CTASection {
+    position: relative;
+    /* top: 60px;  */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+    padding: 60px;
+}
+
+.group {
+    border-radius: 12px solid black;
+    margin-bottom: 60px;
+}
+
+
+input {
+    width: 586px;
+}
+
+.Submit {
+    width: 130px;
+    height: 39px;
+    gap: 10px;
+}
+
+
+
