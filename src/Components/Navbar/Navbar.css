@@ -5,7 +5,7 @@
     align-items: center;
     padding: 20px 40px 20px 40px;
     position: fixed;
-    
+    z-index: 10;
 }
 
 .Logo {
@@ -16,7 +16,9 @@
 .links {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+
+    gap: 100px;
     font-size: 16px;
 }
 
@@ -24,4 +26,9 @@
     width: 130px;
     height: 39px;
     gap: 10px;
+    background-color: transparent;
+}
+
+.Subscribe:hover {
+    background-color: #CBDEEC;
 }

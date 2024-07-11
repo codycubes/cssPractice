@@ -1,15 +1,17 @@
 .About {
     display: flex;
     flex-direction: row;
-    top: 150px;
+    /* top: 150px; */
     position: relative;
 
 }
 
-.imageContainer  {
-    width: 50%;
-    position: relative;
+.heading {
+    font-size: 32px;
+    font-weight: 300;
 }
+
+
 
 .textSection {
     position: relative;
@@ -20,11 +22,12 @@
     gap: 84px;
     /* top: 100px;
     height: 60%; */
-    padding: 80px;
+    padding: 224px 77px 264px 102px;
 }
 
 p {
     font-size: 16px;
+    font-weight: 300;
 }
 
 
