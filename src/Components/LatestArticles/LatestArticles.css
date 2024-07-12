@@ -1,6 +1,5 @@
 .Container {
     position: relative;
-    
     width: 100%;
     height: 100%;
     background-color: #F8F8F8;
@@ -30,7 +29,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: 222px;
 }
 
 .Card {
@@ -40,6 +39,12 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Card:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
 }
 
 
@@ -54,6 +59,8 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding-left: 34px;
+    padding-right: 34px;
     /* width: 250px; */
 }
 

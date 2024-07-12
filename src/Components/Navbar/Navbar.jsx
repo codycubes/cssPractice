@@ -1,18 +1,39 @@
+import { useState, useEffect } from 'react';
 import React from "react";
 import './Navbar.css'
 
 export const Navbar = () => {
+
+    const [scrolling, setScrolling] = useState(false);
+
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+  
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+
     return(
         <>
-        <div className="Navbar">
-            <div className="Logo">D</div>
-            <div className="links">
-                <div className="about">About</div>
-                <div className="about">Articles</div>
+        <nav className={scrolling ? 'navbar-scroll' : ''}>
+            <div className='logoContainer'>
+                <div className="Logo1">D</div>
+                <div className="Logo2">Z</div>
+            </div>
 
+            <div className="links">
+                <a href=''>About</a>
+                <a href=''>Articles</a>
             </div>
             <button className="Subscribe"> Subscribe </button>
-        </div>
+        </nav>
         
         </>
     )

@@ -1,6 +1,6 @@
 import React from "react";
 import './LatestArticles.css'
-import { Card } from "../Card/Card";
+
 
 export const LatestArticles = () => {
     return(
@@ -12,36 +12,32 @@ export const LatestArticles = () => {
             <hr className="line"></hr>
 
             <div className="cardContainer">
-{/* 
-                <Card />
-                <Card />
-                <Card />
-                <Card /> */}
 
-        <div className="Card">
-            <img  className="cardIMG" src="./drone1 1.png" />
-            <hr className="line"></hr>
-            <p className="paragraph">How to automate surveillance drones</p>
-        </div>
+                <div className="Card">
+                    <img  className="cardIMG" src="./drone1 1.png" />
+                    <hr className="line"></hr>
+                    <p className="paragraph">How to automate surveillance drones</p>
+                </div>
 
-        <div className="Card">
-            <img  className="cardIMG" src="./drone2 1.png" />
-            <hr className="line"></hr>
-            <p className="paragraph">Robotics And Artificial Intelligence</p>
-        </div>
-           
+                <div className="Card">
+                    <img  className="cardIMG" src="./drone2 1.png" />
+                    <hr className="line"></hr>
+                    <p className="paragraph">Robotics And Artificial Intelligence</p>
+                </div>
+                
 
-        <div className="Card">
-            <img  className="cardIMG" src="./drone4 1.png" />
-            <hr className="line"></hr>
-            <p className="paragraph">Improving Lives Through Robotic Prosthetics</p>
-        </div>
+                <div className="Card">
+                    <img  className="cardIMG" src="./drone4 1.png" />
+                    <hr className="line"></hr>
+                    <p className="paragraph">Improving Lives Through Robotic Prosthetics</p>
+                </div>
 
-        <div className="Card">
-            <img  className="cardIMG" src="./drone6 1.png" />
-            <hr className="line"></hr>
-            <p className="paragraph">Power Of Robotics In Agriculture</p>
-        </div>  
+                <div className="Card">
+                    <img  className="cardIMG" src="./drone6 1.png" />
+                    <hr className="line"></hr>
+                    <p className="paragraph">Power Of Robotics In Agriculture</p>
+                </div>
+
         </div>
 
         </div>
