@@ -12,6 +12,8 @@ export const About = () => {
             <div className="textSection">
                 <h1 className="heading">ABOUT US </h1>
                 <hr className="line"></hr>
+
+                
                 <div className="paragraph">
                     <p>
                     Welcome to our dronoticz, where innovation and technology converge to shape the future. 
@@ -24,11 +26,14 @@ export const About = () => {
                     machines work hand-in-hand with humans. 
                     Discover the power of robotics and be part of the revolution.
                     </p>
+                
+
                 </div>
 
             </div>
         </div>
 
         </>
+         
     )
 }
