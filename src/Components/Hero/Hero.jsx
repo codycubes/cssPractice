@@ -6,17 +6,14 @@ export const Hero = () => {
         <>
         <div className="hero">
             <div className="hero-image">
-                <img src=" ./hero 1.png"  />
-                
+                <img src="./hero 1.png" alt="Hero" />
                 <div className="hero-text">
-                <h1 className="header">DRONOTICS</h1>
-                <h2 className="subHeading">THE ERA OF DRONES</h2>
-                <hr className="line"></hr>
+                    <h1 className="header">DRONOTICS</h1>
+                    <h2 className="subHeading">THE ERA OF DRONES</h2>
+                    <hr className="line" />
+                </div>
             </div>
-
-        </div>
         </div>
         </>
-     
-)
+    )
 }

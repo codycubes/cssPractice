@@ -3,31 +3,70 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px 20px 40px;
-    position: relative;
+    padding: 20px 40px;
+    background-color: #F8F8F8;
 }
-.icons{
+
+.icons {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
-    font-size: 16px;
 }
 
 .links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     font-size: 16px;
-    font-weight: 300px;
 }
 
+.linkItem {
+    cursor: pointer;
+}
 
 .Subscribe {
     width: 130px;
-    height: 39px;lk
-    gap: 10px;
+    height: 39px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.Subscribe:hover {
+    background-color: #000;
+    color: white;
+}
 
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+    .Footer {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .icons {
+        margin-bottom: 20px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Subscribe {
+        width: 100px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Footer {
+        padding: 20px;
+    }
+
+    .Subscribe {
+        width: 90px;
+        height: 30px;
+    }
+}

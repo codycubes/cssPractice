@@ -1,36 +1,68 @@
 .CTASection {
     position: relative;
-    /* top: 60px;  */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
     background-color: #F8F8F8;
-    padding: 60px;
+    padding: 60px 20px;
 }
 
 .group {
-    border-radius: 12px solid black;
-    margin-bottom: 60px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
 }
 
-
 input {
-    width: 586px;
-    height: 55px;
+    width: 100%;
+    max-width: 586px;
+    height: 45px;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .Submit {
-    width: 130px;
-    height: 39px;
-    gap: 10px;
+    width: 100px;
+    height: 45px;
     background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .Submit:hover {
-    background-color: #000000;
+    background-color: #000;
     color: white;
-    cursor: pointer;
 }
 
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+    input {
+        max-width: 100%;
+        width: calc(100% - 40px);
+    }
 
+    .Submit {
+        width: 80px;
+        height: 40px;
+    }
+}
 
+@media (max-width: 480px) {
+    input {
+        width: calc(100% - 20px);
+    }
+
+    .Submit {
+        width: 100px;
+        height: 45px;
+    }
+}

@@ -49,3 +49,39 @@ img {
     width: 69px;
     height: 2px;
   }
+
+
+
+  @media (max-width: 768px) {
+    .hero-text{
+      top: 60%;
+    }
+
+    .header {
+        font-size: 8vw;
+    }
+
+    .subHeading {
+        font-size: 3.5vw;
+    }
+    .line {
+        width: 12vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-text{
+      top: 70%;
+    }
+
+    .header {
+        font-size: 6vw;
+    }
+    .subHeading {
+        font-size: 3vw;
+    }
+    .line {
+        width: 15vw;
+    }
+  }
+  

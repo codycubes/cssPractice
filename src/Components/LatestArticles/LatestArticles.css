@@ -1,74 +1,89 @@
 .Container {
     position: relative;
     width: 100%;
-    height: 100%;
     background-color: #F8F8F8;
-    /* margin-bottom: 40px; */
+    padding: 40px 20px;
 }
 
-
 .title {
-
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
     margin: 0;
-    padding: 0;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .cardContainer {
     position: relative;
-    top: 60px;
-    padding: 0px;
-    padding-left: 120px;
-    padding-right: 120px;
+    top: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 222px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
 }
 
 .Card {
-    width: 282px;
-    height: 376px;
-    align-items: center;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.5s ease-in-out;
 }
 
 .Card:hover {
-    transform: scale(1.1);
-    transition: 0.5s ease-in-out;
+    transform: scale(1.05);
 }
 
-
 .cardIMG {
-    width: 282px;
-    height: 188px;
+    width: 100%;
+    height: auto;
 }
 
 .paragraph {
-    position: relative;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding-left: 34px;
-    padding-right: 34px;
-    /* width: 250px; */
+    padding: 20px;
+    font-size: 1rem;
 }
 
 .line {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-bottom: 5px solid #000000;
+    margin: 20px auto;
+    border-bottom: 2px solid #000000;
     width: 64px;
-    height: 4px;
-  }
+}
 
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .paragraph {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .paragraph {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .line {
+        width: 50px;
+    }
+}

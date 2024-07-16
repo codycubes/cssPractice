@@ -3,6 +3,7 @@ import './Navbar.css';
 
 export const Navbar = () => {
     const [scrolling, setScrolling] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,17 +19,26 @@ export const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
-        <nav className={scrolling ? 'navbar-scroll' : ''}>
+        <nav className={`navbar ${scrolling ? 'navbar-scroll' : ''}`}>
             <div className='logoContainer'>
                 <div className="Logo1">D</div>
                 <div className="Logo2">Z</div>
             </div>
-            <div className="links">
-                <a href=''>About</a>
-                <a href=''>Articles</a>
+            <div className={`links ${menuOpen ? 'open' : ''}`}>
+                <a href='#about'>About</a>
+                <a href='#articles'>Articles</a>
             </div>
             <button className="Subscribe"> Subscribe </button>
+            <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     );
 };
