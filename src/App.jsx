@@ -22,6 +22,8 @@ function App() {
         <DroneXP />
         
       </div>
+
+      
       <Navbar />
       <Hero />
       <div className="about-section">
