@@ -1,5 +1,7 @@
 import React from "react";
 import './Footer.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { facebook, linkedin, pinterest } from "fontawesome";
 
 
 
@@ -10,6 +12,9 @@ export const Footer = () => {
         <div className="Footer">
 
             <div className="icons">
+                {/* <FontAwesomeIcon icon={linkedin} />
+                <FontAwesomeIcon icon={facebook} />
+                <FontAwesomeIcon icon={pinterest} /> */}
                 <img src="./Facebook.png" />
                 <img src="./LinkedIn.png" />
                 <img src="./Pinterest.png" />
