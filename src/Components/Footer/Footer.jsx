@@ -1,34 +1,21 @@
 import React from "react";
-import './Footer.css'
+import './Footer.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { facebook, linkedin, pinterest } from "fontawesome";
-
-
+import { faFacebookF, faLinkedinIn, faPinterestP } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
-    return(
-        <>
-
+    return (
         <div className="Footer">
-
             <div className="icons">
-                {/* <FontAwesomeIcon icon={linkedin} />
-                <FontAwesomeIcon icon={facebook} />
-                <FontAwesomeIcon icon={pinterest} /> */}
-                <img src="./Facebook.png" />
-                <img src="./LinkedIn.png" />
-                <img src="./Pinterest.png" />
+                <FontAwesomeIcon icon={faFacebookF} size="2x" />
+                <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
+                <FontAwesomeIcon icon={faPinterestP} size="2x"/>
             </div>
-
             <div className="links">
                 <div className="about">About</div>
                 <div className="about">Articles</div>
                 <button className="Subscribe"> Subscribe </button>
             </div>
-
-           
         </div>
-        
-        </>
-    )
+    );
 }
