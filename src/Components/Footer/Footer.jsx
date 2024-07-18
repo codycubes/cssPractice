@@ -7,9 +7,10 @@ export const Footer = () => {
     return (
         <div className="Footer">
             <div className="icons">
-                <FontAwesomeIcon icon={faFacebookF} size="2x" />
-                <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
-                <FontAwesomeIcon icon={faPinterestP} size="2x"/>
+    
+                <img src="./facebook.jpg" />
+                <img src="./linkedin.jpg" />
+                <img src="./pinterest.jpg" />
             </div>
             <div className="links">
                 <div className="about">About</div>
