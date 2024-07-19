@@ -15,8 +15,14 @@ function App() {
     <>
     <Navbar />
     <Hero />
+    <section id='articles'>
     <LatestArticles />
-    <About />
+    </section>
+   
+   <section id='about'>
+   <About />
+   </section>
+    
     <CTASection />
     <Footer />
 

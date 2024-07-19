@@ -15,6 +15,7 @@ html, body  {
   overflow-x: hidden;
   color: black;
   font-family: inter;
+  scroll-behavior: smooth;
 
  
 }

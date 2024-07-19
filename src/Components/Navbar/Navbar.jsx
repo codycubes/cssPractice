@@ -30,8 +30,8 @@ export const Navbar = () => {
                 <div className="Logo2">Z</div>
             </div>
             <div className={`links ${menuOpen ? 'open' : ''}`}>
-                <a href='#about'>About</a>
                 <a href='#articles'>Articles</a>
+                <a href='#about'>About</a>
             </div>
             <button className="Subscribe"> Subscribe </button>
             <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
