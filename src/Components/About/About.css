@@ -50,31 +50,28 @@
 /* Media Queries for different screen sizes */
 @media (max-width: 768px) {
 
-
-
     .imageContainer {
-    flex: 1;
-    max-width: 500px;
-    padding: 20px;
-    text-align: center;
+        flex: 1;
+        max-width: 500px;
+        padding: 20px;
+        text-align: center;
+    }
 
-}
-
-.imageContainer img {
-    width: 100%;
-    height: auto;
-}
+    .imageContainer img {
+        width: 100%;
+        height: auto;
+    }
 
     .About {
         flex-direction: column;
     }
 
     .heading {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 
     .paragraph {
-        font-size: 0.9rem;
+        font-size: 14px;
     }
 
     .line {
@@ -84,11 +81,11 @@
 
 @media (max-width: 480px) {
     .heading {
-        font-size: 1.2rem;
+        font-size: 20px;
     }
 
     .paragraph {
-        font-size: 0.8rem;
+        font-size: 12px;
     }
 
     .line {

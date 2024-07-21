@@ -56,16 +56,17 @@ img {
     .hero-text{
       top: 60%;
     }
-
+  
     .header {
-        font-size: 8vw;
+      font-size: 60px;
     }
-
+  
     .subHeading {
-        font-size: 3.5vw;
+      font-size: 26x;
     }
+  
     .line {
-        width: 12vw;
+      width: 92px;
     }
   }
   
@@ -73,15 +74,17 @@ img {
     .hero-text{
       top: 70%;
     }
-
+  
     .header {
-        font-size: 6vw;
+      font-size: 28px;
     }
+  
     .subHeading {
-        font-size: 3vw;
+      font-size: 14px;
     }
+  
     .line {
-        width: 15vw;
+      width: 72px;
     }
   }
   

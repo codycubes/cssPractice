@@ -55,7 +55,7 @@
 /* Media Queries for different screen sizes */
 @media (max-width: 768px) {
     .title {
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 
     .cardContainer {
@@ -69,17 +69,17 @@
     }
 
     .paragraph {
-        font-size: 0.9rem;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
     .title {
-        font-size: 1.2rem;
+        font-size: 20px;
     }
 
     .paragraph {
-        font-size: 0.8rem;
+        font-size: 12px;
         padding: 10px;
     }
 

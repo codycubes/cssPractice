@@ -47,7 +47,7 @@ input {
 @media (max-width: 768px) {
     input {
         max-width: 100%;
-        width: calc(100% - 40px);
+        /* width: calc(100% - 40px); */
     }
 
     .Submit {
@@ -57,9 +57,9 @@ input {
 }
 
 @media (max-width: 480px) {
-    input {
+    /* input {
         width: calc(100% - 20px);
-    }
+    } */
 
     .Submit {
         width: 100px;
