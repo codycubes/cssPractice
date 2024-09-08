@@ -11,19 +11,9 @@ import { DroneXP } from './Components/DroneXP/DroneXP'
 function App() {
   return (
     <>
-      <div className='Overlay' style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        pointerEvents: "none",
-        
-      }}>
+      <div className='Overlay'>
         <DroneXP />
-        
       </div>
-
       
       <Navbar />
       <Hero />

@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 export const DroneModel = forwardRef((props, ref) => {
   const { nodes, materials } = useGLTF('./DJI.glb')
   return (
-<group {...props} dispose={null}>
+<group ref={ref} {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow

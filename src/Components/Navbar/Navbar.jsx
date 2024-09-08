@@ -29,8 +29,8 @@ export const Navbar = () => {
             </div>
 
             <div className="links">
-                <a href=''>About</a>
-                <a href=''>Articles</a>
+                <a href='#about-section'>About</a>
+                <a href='#cta-section'>Articles</a>
             </div>
             <button className="Subscribe"> Subscribe </button>
         </nav>
