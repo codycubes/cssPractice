@@ -2,81 +2,46 @@ import React, { useRef, useEffect, useLayoutEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { gsap } from 'gsap';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { DroneModel } from './DroneModel';
 import { Leva, useControls } from 'leva';
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-
-
 export const DroneXP = () => {
   const cameraRef = useRef();
   const tl = gsap.timeline();
 
-  // // ScrollTrigger for animating the camera based on scrolling
-  // useEffect(() => {
-  //   if (cameraRef.current) {
-  //     // GSAP ScrollTrigger to manipulate camera position based on scroll
-  //     gsap.to(cameraRef.current.position, {
-  //       x: 6, // Example value for camera X position
-  //       scrollTrigger: {
-  //         trigger: '.about-section', // Example section
-  //         start: 'top center',
-  //         end: 'bottom center',
-  //         scrub: true,
-  //       },
-  //     });
-
-  //     gsap.to(cameraRef.current.position, {
-  //       y: -2, // Example value for camera Y position
-  //       scrollTrigger: {
-  //         trigger: '.cta-section', // Example section
-  //         start: 'top center',
-  //         end: 'bottom center',
-  //         scrub: true,
-  //       },
-  //     });
-
-
-  //   }
-  // }, []);
-
   useLayoutEffect(() => {
-    new ScrollTrigger({});
-    // component About.tsx
-    tl.to(cameraRef.position, {
-      x: 5,
-      y: 4.0,
-      z: 2.8,
-      scrollTrigger: {
-        trigger: ".about-section",
-        start: "top bottom",
-        end: "top top",
-        scrub: true,
-        immediateRender: false,
-      },
-    })
-
-
-
-      // component - BuyNow.tsx
-      .to(cameraRef.position, {
-        x: 5,
-        y: 3.8,
-        z: 2.8,
+    if (cameraRef.current) {
+      tl.to(cameraRef.current.position, {
+        x: -2.8,
+        y: 0.4,
+        z: 3,
         scrollTrigger: {
-          trigger: ".cta-section",
+          trigger: "#about-section",
           start: "top bottom",
           end: "top top",
           scrub: true,
           immediateRender: false,
         },
       })
+      .to(cameraRef.current.position, {
+        x: 5,
+        y: 3.8,
+        z: 2.8,
+        scrollTrigger: {
+          trigger: "#cta-section",
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      });
 
-
+      // Refresh ScrollTrigger after everything is set up
+      // ScrollTrigger.refresh();
+    }
   }, []);
 
   return (
@@ -88,12 +53,13 @@ export const DroneXP = () => {
         {/* Camera setup */}
         <PerspectiveCamera
           makeDefault
+          position={[0, 0, 5]}
           fov={56}
           ref={cameraRef} // Attach the cameraRef to the PerspectiveCamera
         />
 
         {/* Camera controller for Leva updates */}
-        <CameraController cameraRef={cameraRef} />
+        {/* <CameraController cameraRef={cameraRef} /> */}
 
         <OrbitControls />
       </Canvas>
@@ -101,9 +67,6 @@ export const DroneXP = () => {
     </div>
   );
 };
-
-
-
 
 const CameraController = ({ cameraRef }) => {
   // Leva controls for camera position, rotation, and zoom
@@ -129,3 +92,4 @@ const CameraController = ({ cameraRef }) => {
 
   return null;
 };
+

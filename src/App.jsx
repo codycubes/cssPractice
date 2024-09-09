@@ -1,32 +1,33 @@
-import React from 'react'
-import { Navbar } from './Components/Navbar/Navbar'
-import { Hero } from './Components/Hero/Hero'
-import { LatestArticles } from './Components/LatestArticles/LatestArticles'
-import { About } from './Components/About/About'
-import { CTASection } from './Components/CTASection/CTASection'
-import { Footer } from './Components/Footer/Footer'
-import './App.css'
-import { DroneXP } from './Components/DroneXP/DroneXP'
+// App.js
+import React from 'react';
+import { Navbar } from './Components/Navbar/Navbar';
+import { Hero } from './Components/Hero/Hero';
+import { LatestArticles } from './Components/LatestArticles/LatestArticles';
+import { About } from './Components/About/About';
+import { CTASection } from './Components/CTASection/CTASection';
+import { Footer } from './Components/Footer/Footer';
+import './App.css';
+import { DroneXP } from './Components/DroneXP/DroneXP';
 
 function App() {
   return (
     <>
-      <div className='Overlay'>
+      <div className="Overlay">
         <DroneXP />
       </div>
-      
+
       <Navbar />
       <Hero />
-      <div className="about-section">
+      <section id="about-section">
         <About />
-      </div>
+      </section>
       <LatestArticles />
-      <div className="cta-section">
+      <section id="cta-section"> {/* Fixed typo here */}
         <CTASection />
-      </div>
+      </section>
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
